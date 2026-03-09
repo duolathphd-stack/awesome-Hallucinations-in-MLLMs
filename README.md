@@ -301,8 +301,7 @@
 
 | Benchmark | Pub | Size | Task | Metric | Object | Attribute | Relation | Other | LLM Free | Human Annotation Free |
 |-----------|-----|------|------|--------|--------|-----------|----------|-------|----------|------------------------|
-| **VQA Benchmark** |  |  |  |  |  |  |  |  |  |  |
-| CHAIR | EMNLP'18 | 5,000 | Gen | CHAIR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| CHAIR  [Object Hallucination in Image Captioning](https://arxiv.org/abs/1809.02156)| EMNLP'18 | 5,000 | Gen | CHAIR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | POPE | EMNLP'23 | 3,000 | Dis | Acc/P/R/F1 | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | MME | NeurIPS’25 | 1,457 | Dis | Acc/Score | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
 | CIEM | arXiv'23 | 40,367 | Dis | Acc/P/R/F1/Specificity | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ |
@@ -318,7 +317,6 @@
 | CCeval | arXiv'23 | 100 | Gen | LLM-based CHAIR | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | MERLIM | CVPR'25 | 31,373 | Dis | Accuracy | ✅ | ❌ | ✅ | ❌ | ✅ | ❌ |
 | VisDiaHalBench | ACL'24 | 25,000 | Dis | F1/EM | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
-| **Multi-task Benchmark** |  |  |  |  |  |  |  |  |  |  |
 | FGHE | MMM'24 | 200 | Dis | Acc/P/R/F | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | OpenCHAIR | EMNLP'24 | 2,000 | Gen | OpenCHAIR | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
 | VHILT | arXiv'24 | 2,000 | Gen | Acc | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
@@ -342,7 +340,6 @@
 | CMM | arXiv'24 | 2,400 | Dis | PA/HR | ❌ | ❌ | ❌ | Modality Dominance | ✅ | ❌ |
 | I-HallA | AAAI'25 | 1,000 | Gen | I-HallA Score | ❌ | ❌ | ❌ | T2I | ❌ | ✅ |
 | ODE | CVPR'25 | 8,786 | Dis & Gen | AMBER/Acc | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| **Video Benchmark** |  |  |  |  |  |  |  |  |  |  |
 | AVHBench | ICLR'25 | 5,302 | Dis & Gen | Acc/P/R/F | ❌ | ❌ | ❌ | Video Action | ❌ | ❌ |
 | VIDHAL | arXiv'24 | 1,000 | Dis | NDCG | ✅ | ✅ | ❌ | Video Action | ❌ | ❌ |
 | GenAI-Bench | CVPRW'24 | 1,600 | Gen | Human/VQAScore | ❌ | ✅ | ✅ | Video Action | ❌ | ❌ |
