@@ -299,6 +299,56 @@
 
 ## Evaluation-Benchmark
 
+| Benchmark | Pub | Size | Task | Metric | Object | Attribute | Relation | Other | LLM Free | Human Annotation Free |
+|-----------|-----|------|------|--------|--------|-----------|----------|-------|----------|------------------------|
+| **VQA Benchmark** |  |  |  |  |  |  |  |  |  |  |
+| CHAIR | EMNLP'18 | 5,000 | Gen | CHAIR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| POPE | EMNLP'23 | 3,000 | Dis | Acc/P/R/F1 | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| MME | NeurIPS’25 | 1,457 | Dis | Acc/Score | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| CIEM | arXiv'23 | 40,367 | Dis | Acc/P/R/F1/Specificity | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ |
+| HaELM | arXiv'23 | 25,000 | Gen | LLM Rating | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| MMHal-Bench | ACL'24 | 96 | Gen | LLM Rating | ✅ | ❌ | ❌ | Model Bias | ❌ | ✅ |
+| GAVIE | ICLR'24 | 1,000 | Gen | LLM Rating | ✅ | ✅ | ✅ | Env/Action/Comp | ❌ | ✅ |
+| NOPE | ACL-W'24 | 36,000 | Dis | Acc/METEOR | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| FAITHSCORE | EMNLP'24 | 2,000 | Gen | FaithScore | ✅ | ✅ | ✅ | Obj. Counting | ❌ | ❌ |
+| AMBER | arXiv'23 | 15,202 | Dis & Gen | AMBER Score | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
+| Bingo | arXiv'23 | 370 | Gen | Human Assessment | ❌ | ❌ | ❌ | Model Bias | ✅ | ✅ |
+| HallusionBench | CVPR'24 | 1,129 | Gen | LLM Rating | ❌ | ❌ | ❌ | Model Diagnose | ✅ | ❌ |
+| RAH-Bench | arXiv'23 | 3,000 | Dis | False Positive Rate | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
+| CCeval | arXiv'23 | 100 | Gen | LLM-based CHAIR | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| MERLIM | CVPR'25 | 31,373 | Dis | Accuracy | ✅ | ❌ | ✅ | ❌ | ✅ | ❌ |
+| VisDiaHalBench | ACL'24 | 25,000 | Dis | F1/EM | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
+| **Multi-task Benchmark** |  |  |  |  |  |  |  |  |  |  |
+| FGHE | MMM'24 | 200 | Dis | Acc/P/R/F | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
+| OpenCHAIR | EMNLP'24 | 2,000 | Gen | OpenCHAIR | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
+| VHILT | arXiv'24 | 2,000 | Gen | Acc | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
+| MMVP | CVPR'24 | 300 | Dis | Acc | ❌ | ❌ | ❌ | CLIP-blind Pairs | ❌ | ❌ |
+| VQAv2-IDK | ICASSP'24 | 6,624 | Dis | Acc | ❌ | ❌ | ❌ | IDK (IK) | ✅ | ❌ |
+| MHaluBench | ACL'24 | 1,860 | Gen | Acc/P/R/F | ✅ | ✅ | ❌ | T2I | ✅ | ✅ |
+| MAD-Bench | arXiv'24 | 1,000 | Gen | Acc | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
+| VHTest | ACL'24 | 1,200 | Dis & Gen | Acc | ✅ | ✅ | ❌ | Visual Hallucination | ❌ | ❌ |
+| PHD | CVPR'25 | 102,564 | Dis | PhD Index | ✅ | ✅ | ✅ | Sentiment | ❌ | ❌ |
+| MM-UPD | arXiv'24 | 2,095 | Dis | Acc | ❌ | ❌ | ❌ | Unsolvable (UPD) | ❌ | ❌ |
+| Hal-Eval | ACMMM'24 | 10,000 | Dis & Gen | Acc/Score | ✅ | ✅ | ✅ | Event Hallucination | ✅ | ❌ |
+| VALOR-EVAL | ACL'24 | 211 | Gen | Faithfulness & Coverage | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| R-Bench | ICML'24 | 8,030 | Dis | Acc/P/R/F1 | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
+| THRONE | CVPR'24 | 5,000 | Gen | P/R/F | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
+| AutoHallusion | EMNLP'24 | 5,000 | Dis | ASR/MASR/CASR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
+| MFC Bench | arXiv'24 | 35,000 | Dis & Gen | Acc/F1 | ❌ | ❌ | ❌ | Manipulation/OOC/Veracity | – | – |
+| HQHBench | arXiv'24 | 4,000 | Dis & Gen | Hallucination Rate | ✅ | ✅ | ✅ | OCR/Action/Counting | ❌ | ✅ |
+| ROPE | NeurIPS'24 | 5,000 | Gen | Accuracy | ✅ | ✅ | ✅ | Multi-Object | ✅ | ✅ |
+| Reefknot | ACL'25 | 21,880 | Dis & Gen | R-score | ❌ | ❌ | ✅ | ❌ | ❌ | ✅ |
+| LongHallGen | arXiv'24 | 6,485 | Dis | Accuracy | ✅ | ✅ | ❌ | Long Context | ❌ | ✅ |
+| CMM | arXiv'24 | 2,400 | Dis | PA/HR | ❌ | ❌ | ❌ | Modality Dominance | ✅ | ❌ |
+| I-HallA | AAAI'25 | 1,000 | Gen | I-HallA Score | ❌ | ❌ | ❌ | T2I | ❌ | ✅ |
+| ODE | CVPR'25 | 8,786 | Dis & Gen | AMBER/Acc | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
+| **Video Benchmark** |  |  |  |  |  |  |  |  |  |  |
+| AVHBench | ICLR'25 | 5,302 | Dis & Gen | Acc/P/R/F | ❌ | ❌ | ❌ | Video Action | ❌ | ❌ |
+| VIDHAL | arXiv'24 | 1,000 | Dis | NDCG | ✅ | ✅ | ❌ | Video Action | ❌ | ❌ |
+| GenAI-Bench | CVPRW'24 | 1,600 | Gen | Human/VQAScore | ❌ | ✅ | ✅ | Video Action | ❌ | ❌ |
+| EventHallusion | arXiv'24 | 711 | Dis & Gen | Accuracy | ❌ | ❌ | ❌ | Video Event | ❌ | ❌ |
+
+
 1. **CHAIR**: [Object Hallucination in Image Captioning](https://arxiv.org/abs/1809.02156) (EMNLP 2018) [![Star](https://img.shields.io/github/stars/LisaAnne/Hallucination.svg?style=social&label=Star)](https://github.com/LisaAnne/Hallucination)
      - Introduce problem of object hallucination on MSCOCO image captioning task
      -  CHAIR metrics [built upon unique 80 MSCOCO dataset objects]
@@ -542,9 +592,7 @@
 94.  **CFHR**: [Once Correct, Still Wrong: Counterfactual Hallucination in Multilingual Vision-Language Models](https://arxiv.org/pdf/2602.05437v1) (05 February, 2026)  ![Static Badge](https://img.shields.io/badge/not_release-black?logo=github)
      - data and code will be released
      - soon
-95.  Up to Date (08 february, 2026) and SOTA research work loading...
 
-Note: 'soon' will be replaced with brief description! 
 
 
 ## Detection
