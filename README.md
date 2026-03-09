@@ -3,14 +3,13 @@
 
 
 ---
-- [Awesome LVLM Hallucination](#Awesome-LVLM-Hallucination)
-     - [Hallucination Evaluation Benchmark](#Evaluation-Benchmark)
-     - [Hallucination Detection](#Detection)
+- [Awesome MLLMs Hallucination](#awesome-Hallucinations-in-MLLMs)
+     - [Hallucination Benchmark](#Evaluation-Benchmark)
      - [Hallucination Mitigation](#Mitigation)
      - [Survey](#Survey)
 
 
-
+## Evaluation-Benchmark
 
 
 | Method | Pub | Date |
@@ -302,8 +301,8 @@
 | [CHAIR](https://arxiv.org/abs/1809.02156) | EMNLP'18 | 2018.09 | 5,000 | Gen | CHAIR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | [POPE](https://arxiv.org/pdf/2305.10355.pdf) | EMNLP'23 | 2023.05 | 3,000 | Dis | Acc/P/R/F1 | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | [MME](https://arxiv.org/pdf/2306.13394.pdf) | NeurIPS’25 | 2023.06.23 | 1,457 | Dis | Acc/Score | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| [M-HalDetect](https://arxiv.org/pdf/2308.06394.pdf) | AAAI'24 | 2023.08 | - | - | - | - | - | - | - | - | - |
-| [CIEM](https://arxiv.org/pdf/2309.02301.pdf) | arXiv'23 | 2023.09 | 40,367 | Dis | Acc/P/R/F1/Specificity | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ |
+| [M-HalDetect](https://arxiv.org/pdf/2308.06394.pdf) | AAAI'24 | 2023.08 | 16,000 | Dis | Acc/Score | - | - | - | - | - | - |
+| [CIEM](https://arxiv.org/pdf/2309.02301.pdf) | NeurIPS-W'23| 2023.09 | 40,367 | Dis | Acc/P/R/F1/Specificity | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ |
 | [HaELM](https://arxiv.org/pdf/2308.15126.pdf) | arXiv'23 | 2023.10.10 | 25,000 | Gen | LLM Rating | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | [MMHal-Bench](https://arxiv.org/pdf/2309.14525.pdf) | ACL'24 | 2023.09.25 | 96 | Gen | LLM Rating | ✅ | ❌ | ❌ | Model Bias | ❌ | ✅ |
 | [GAVIE](https://arxiv.org/pdf/2306.14565.pdf) | ICLR'24 | 2023.09.29 | 1,000 | Gen | LLM Rating | ✅ | ✅ | ✅ | Env/Action/Comp | ❌ | ✅ |
@@ -315,68 +314,65 @@
 | [RAH-Bench](https://arxiv.org/pdf/2311.16479.pdf) | arXiv'23 | 2023.11.27 | 3,000 | Dis | False Positive Rate | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [CCeval](https://arxiv.org/pdf/2310.01779.pdf) | arXiv'23 | 2023.12.03 | 100 | Gen | LLM-based CHAIR | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | [MERLIM](https://arxiv.org/pdf/2312.02219.pdf) | CVPR'25 | 2023.12.03 | 31,373 | Dis | Accuracy | ✅ | ❌ | ✅ | ❌ | ✅ | ❌ |
-| VisDiaHalBench | ACL'24 | - | 25,000 | Dis | F1/EM | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [FGHE](https://arxiv.org/pdf/2312.01701.pdf) | MMM'24 | 2023.12.04 | 200 | Dis | Acc/P/R/F | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [OpenCHAIR](https://arxiv.org/pdf/2312.03631.pdf) | EMNLP'24 | 2023.12.06 | 2,000 | Gen | OpenCHAIR | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |
-| VHILT | arXiv'24 | - | 2,000 | Gen | Acc | ✅ | ❌ | ❌ | ❌ | ✅ | ❌ |
-| MMVP | CVPR'24 | 2024.01.11 | 300 | Dis | Acc | ❌ | ❌ | ❌ | CLIP-blind Pairs | ❌ | ❌ |
-| [CorrelationQA](https://arxiv.org/pdf/2402.03757.pdf) | arXiv'24 | 2024.02.06 | - | - | - | - | - | - | - | - | - |
-| [ViGoR](https://arxiv.org/pdf/2402.06118.pdf) | arXiv'24 | 2024.02.09 | - | - | - | - | - | - | - | - | - |
+| [CorrelationQA](https://arxiv.org/pdf/2402.03757.pdf) | arXiv'24 | 2024.02.06 | 7,308 | Dis & Gen| Acc | ✅ | ❌ | ❌ | Spurious Images | ❌ | ✅ |
+| [ViGoR](https://arxiv.org/pdf/2402.06118.pdf) | arXiv'24 | 2024.02.09 | - | Gen | Fine-Grained Reward| ✅ | ✅ | ✅ | Missing Parts | - | - |
 | [VQAv2-IDK](https://arxiv.org/pdf/2402.09717.pdf) | ICASSP'24 | 2024.02.15 | 6,624 | Dis | Acc | ❌ | ❌ | ❌ | IDK (IK) | ✅ | ❌ |
 | [MHaluBench](https://arxiv.org/pdf/2402.03190.pdf) | ACL'24 | 2024.02.20 | 1,860 | Gen | Acc/P/R/F | ✅ | ✅ | ❌ | T2I | ✅ | ✅ |
 | [MAD-Bench](https://arxiv.org/pdf/2402.13220.pdf) | arXiv'24 | 2024.02.20 | 1,000 | Gen | Acc | ✅ | ✅ | ❌ | ❌ | ✅ | ✅ |
 | [VHTest](https://arxiv.org/pdf/2402.14683v1.pdf) | ACL'24 | 2024.02.22 | 1,200 | Dis & Gen | Acc | ✅ | ✅ | ❌ | Visual Hallucination | ❌ | ❌ |
 | [Hal-Eval](https://arxiv.org/pdf/2402.15721.pdf) | ACMMM'24 | 2024.02.24 | 10,000 | Dis & Gen | Acc/Score | ✅ | ✅ | ✅ | Event Hallucination | ✅ | ❌ |
-| [Number Hallucinations](https://arxiv.org/pdf/2403.01373.pdf) | arXiv'24 | 2024.03.03 | - | - | - | - | - | - | - | - | - |
-| [EvalDial](https://arxiv.org/pdf/2403.10492.pdf) | arXiv'24 | 2024.03.15 | - | - | - | - | - | - | - | - | - |
+| [Number Hallucinations](https://arxiv.org/pdf/2403.01373.pdf) | arXiv'24 | 2024.03.03 | - | Gen | Acc | ✅ | ✅ | ❌ | Object Counting | - | - |
+| [EvalDial](https://arxiv.org/pdf/2403.10492.pdf) | arXiv'24 | 2024.03.15 | - | Dis & Gen| Acc | ✅ | - | - | Dialogue Hallucination| ❌ | ✅ |
 | [PHD](https://arxiv.org/pdf/2403.11116.pdf) | CVPR'25 | 2024.03.17 | 102,564 | Dis | PhD Index | ✅ | ✅ | ✅ | Sentiment | ❌ | ❌ |
-| [MM-UPD](https://arxiv.org/pdf/2403.20331) | arXiv'24 | 2024.03.29 | 2,095 | Dis | Acc | ❌ | ❌ | ❌ | Unsolvable (UPD) | ❌ | ❌ |
-| [ALOHa](https://arxiv.org/pdf/2404.02904v1.pdf) | arXiv'24 | 2024.04.03 | - | - | - | - | - | - | - | - | - |
+| [MM-UPD](https://arxiv.org/pdf/2403.20331) | arXiv'24 | 2024.03.29 | 2,095 | Dis | Acc | ❌ | ❌ | ❌ | UPD | ❌ | ❌ |
+| [ALOHa](https://arxiv.org/pdf/2404.02904v1.pdf) | arXiv'24 | 2024.04.03 | - | Gen | ALOHa | ✅ | - | - | Captioning | - | - |
 | [VALOR-EVAL](https://arxiv.org/pdf/2404.13874) | ACL'24 | 2024.04.22 | 211 | Gen | Faithfulness & Coverage | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [THRONE](https://arxiv.org/pdf/2405.05256) | CVPR'24 | 2024.05.08 | 5,000 | Gen | P/R/F | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
-| [MRHal-Bench](https://arxiv.org/pdf/2405.11165) | arXiv'24 | 2024.05.18 | - | - | - | - | - | - | - | - | - |
-| [VLind-Bench](https://arxiv.org/pdf/2406.08702) | arXiv'24 | 2024.06.13 | - | - | - | - | - | - | - | - | - |
-| [MMRel](https://arxiv.org/pdf/2406.09121) | arXiv'24 | 2024.06.13 | - | - | - | - | - | - | - | - | - |
-| [Med-HallMark](https://arxiv.org/pdf/2406.10185) | arXiv'24 | 2024.06.14 | - | - | - | - | - | - | - | - | - |
+| [MRHal-Bench](https://arxiv.org/pdf/2405.11165) | arXiv'24 | 2024.05.18 | - | Gen | Score / Hal | - | - | - | Multi-round Conv | - | - |
+| [VLind-Bench](https://arxiv.org/pdf/2406.08702) | arXiv'24 | 2024.06.13 | 2,576 | Dis | Acc (Y/N) | ✅ | - | - | Language Priors | - | - |
+| [MMRel](https://arxiv.org/pdf/2406.09121) | arXiv'24 | 2024.06.13 | 22,500 | Dis & Gen | Acc | ✅ | - | ✅ | Relation Understanding| - | - |
+| [Med-HallMark](https://arxiv.org/pdf/2406.10185) | arXiv'24 | 2024.06.14 | - | - | MediHall Score | - | - | - | Medical Context | - | - |
 | [AutoHallusion](https://arxiv.org/pdf/2406.10900) | EMNLP'24 | 2024.06.16 | 5,000 | Dis | ASR/MASR/CASR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | [MFC Bench](https://arxiv.org/pdf/2406.11288) | arXiv'24 | 2024.06.17 | 35,000 | Dis & Gen | Acc/F1 | ❌ | ❌ | ❌ | Manipulation/OOC/Veracity | – | – |
-| [CHAIR-MEN](https://arxiv.org/pdf/2406.14492) | arXiv'24 | 2024.06.20 | - | - | - | - | - | - | - | - | - |
+| [CHAIR-MEN](https://arxiv.org/pdf/2406.14492) | arXiv'24 | 2024.06.20 | - | Gen | CHAIR-MEN | ✅ | - | - | Grounding | - | - |
 | [HQHBench](https://arxiv.org/pdf/2406.17115) | arXiv'24 | 2024.06.24 | 4,000 | Dis & Gen | Hallucination Rate | ✅ | ✅ | ✅ | OCR/Action/Counting | ❌ | ✅ |
-| [VideoHallucer](https://arxiv.org/pdf/2406.16338) | arXiv'24 | 2024.06.24 | - | - | - | - | - | - | - | - | - |
+| [VideoHallucer](https://arxiv.org/pdf/2406.16338) | arXiv'24 | 2024.06.24 | - | Dis & Gen | Acc | ✅ | - | ✅ | Temporal/Extrinsic | - | - |
 | [R-Bench](https://arxiv.org/pdf/2406.16449) | ICML'24 | 2024.06.24 | 8,030 | Dis | Acc/P/R/F1 | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ |
 | [MMHalSnowball](https://arxiv.org/pdf/2407.00569) | arXiv'24 | 2024.06.30 | - | - | - | - | - | - | - | - | - |
-| [MedVH](https://arxiv.org/pdf/2407.02730) | arXiv'24 | 2024.07.03 | - | - | - | - | - | - | - | - | - |
+| [MedVH](https://arxiv.org/pdf/2407.02730) | arXiv'24 | 2024.07.03 | - | Dis & Gen | Characterization Score| - | - | - | Medical Context | - | - |
 | [ROPE](https://arxiv.org/abs/2407.06192) | NeurIPS'24 | 2024.07.08 | 5,000 | Gen | Accuracy | ✅ | ✅ | ✅ | Multi-Object | ✅ | ✅ |
-| [BEAF](https://arxiv.org/pdf/2407.13442) | ECCV'24 | 2024.07.18 | - | - | - | - | - | - | - | - | - |
-| [HaloQuest](https://arxiv.org/pdf/2407.15680) | ECCV'24 | 2024.07.22 | - | - | - | - | - | - | - | - | - |
-| [MMINSTRUCT](https://arxiv.org/pdf/2407.15838) | arXiv'24 | 2024.07.22 | - | - | - | - | - | - | - | - | - |
-| [Hallu-PI](https://arxiv.org/pdf/2408.01355) | arXiv'24 | 2024.08.02 | - | - | - | - | - | - | - | - | - |
+| [BEAF](https://arxiv.org/pdf/2407.13442) | ECCV'24 | 2024.07.18 | 26,064 | Dis | TU/IG/SB/ID | ✅ | - | - | Before-After Changes | - | - |
+| [HaloQuest](https://arxiv.org/pdf/2407.15680) | ECCV'24 | 2024.07.22 | - | Gen | - | - | - | - | VQA | - | - |
+| [MMINSTRUCT](https://arxiv.org/pdf/2407.15838) | arXiv'24 | 2024.07.22 | - | Gen | - | - | - | - | Instruction Tuning | - | - |
+| [Hallu-PI](https://arxiv.org/pdf/2408.01355) | arXiv'24 | 2024.08.02 | - | Dis | Acc | - | - | - | Perturbed Inputs | - | - |
 | [Reefknot](https://arxiv.org/pdf/2408.09429) | ACL'25 | 2024.08.18 | 21,880 | Dis & Gen | R-score | ❌ | ❌ | ✅ | ❌ | ❌ | ✅ |
 | [Pfram](https://arxiv.org/pdf/2409.01151) | arXiv'24 | 2024.09.02 | - | - | - | - | - | - | - | - | - |
 | [ODE](https://arxiv.org/abs/2409.09318) | CVPR'25 | 2024.09.14 | 8,786 | Dis & Gen | AMBER/Acc | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| [LLSAVisionQA](https://arxiv.org/pdf/2409.09748) | arXiv'24 | 2024.09.15 | - | - | - | - | - | - | - | - | - |
-| [CAST](https://arxiv.org/pdf/2409.11007) | arXiv'24 | 2024.09.17 | - | - | - | - | - | - | - | - | - |
-| [FIHA](https://arxiv.org/pdf/2409.13612) | arXiv'24 | 2024.09.20 | - | - | - | - | - | - | - | - | - |
+| [LLSAVisionQA](https://arxiv.org/pdf/2409.09748) | arXiv'24 | 2024.09.15 | 4,989 | Gen | Acc | - | - | - | Low-level Perception | - | - |
+| [CAST](https://arxiv.org/pdf/2409.11007) | arXiv'24 | 2024.09.17 | - | Dis & Gen | Similarity | - | - | - | Self-consistency | - | - |
+| [FIHA](https://arxiv.org/pdf/2409.13612) | arXiv'24 | 2024.09.20 | - | - | - | - | - | - | Davidson Scene Graphs| - | - |
 | [EventHallusion](https://arxiv.org/pdf/2409.16597) | arXiv'24 | 2024.09.25 | 711 | Dis & Gen | Accuracy | ❌ | ❌ | ❌ | Video Event | ❌ | ❌ |
-| [JourneyBench](https://arxiv.org/pdf/2409.12953) | arXiv'24 | 2024.09.25 | - | - | - | - | - | - | - | - | - |
-| [TUBench](https://arxiv.org/pdf/2410.04107) | arXiv'24 | 2024.10.05 | - | - | - | - | - | - | - | - | - |
-| [LongHallGen](https://arxiv.org/pdf/2410.09962) | arXiv'24 | 2024.10.13 | 6,485 | Dis | Accuracy | ✅ | ✅ | ❌ | Long Context | ❌ | ✅ |
-| [MM-SY](https://arxiv.org/pdf/2410.11302) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | - | - | - |
-| [Magnifier Prompt](https://arxiv.org/pdf/2410.11701) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | - | - | - |
-| [DeCo](https://arxiv.org/pdf/2410.11779) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | - | - | - |
+| [JourneyBench](https://arxiv.org/pdf/2409.12953) | arXiv'24 | 2024.09.25 | 13,500 | Dis & Gen | Acc | - | - | - | Imaginary VQA | - | ❌ |
+| [TUBench](https://arxiv.org/pdf/2410.04107) | arXiv'24 | 2024.10.05 | 2,354 | Dis | Acc | - | - | - | Unanswerable Qs | - | - |
+| [LongHallGen](https://arxiv.org/pdf/2410.09962) | arXiv'24 | 2024.10.13 | 6,485 | Dis & Gen | Accuracy | ✅ | ✅ | ❌ | Long Context | ❌ | ✅ |
+| [MM-SY](https://arxiv.org/pdf/2410.11302) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | Sycophancy | - | - |
+| [Magnifier Prompt](https://arxiv.org/pdf/2410.11701) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | Mitigation Prompt | - | - |
+| [DeCo](https://arxiv.org/pdf/2410.11779) | arXiv'24 | 2024.10.15 | - | Gen | - | - | - | - | Decoding Method | - | - |
 | [CMM](https://arxiv.org/pdf/2410.12787) | arXiv'24 | 2024.10.16 | 2,400 | Dis | PA/HR | ❌ | ❌ | ❌ | Modality Dominance | ✅ | ❌ |
 | [Trust but Verify](https://arxiv.org/pdf/2410.13121) | arXiv'24 | 2024.10.17 | - | - | - | - | - | - | - | - | - |
-| AVHBench | ICLR'25 | - | 5,302 | Dis & Gen | Acc/P/R/F | ❌ | ❌ | ❌ | Video Action | ❌ | ❌ |
-| [Tri-HE](https://arxiv.org/pdf/2410.23114) | arXiv'24 | 2024.11.03 | - | - | - | - | - | - | - | - | - |
-| [H-POPE](https://arxiv.org/pdf/2411.04077) | arXiv'24 | 2024.11.06 | - | - | - | - | - | - | - | - | - |
+| [AVHBench](https://arxiv.org/pdf/2410.18325) | ICLR'25 | 2024.10.23 | 7,054 | Dis & Gen | Acc/P/R/F | ❌ | ❌ | ❌ | Audio-Visual | ❌ | ❌ |
+| [Tri-HE](https://arxiv.org/pdf/2410.23114) | arXiv'24 | 2024.11.03 | - | - | - | - | - | - | Triplet-Level Eval | - | - |
+| [H-POPE](https://arxiv.org/pdf/2411.04077) | arXiv'24 | 2024.11.06 | - | Dis | Acc/P/R/F1 | ✅ | ✅ | ❌ | Coarse-to-fine | - | - |
 | [VIDHAL](https://arxiv.org/pdf/2411.16771) | arXiv'24 | 2024.11.25 | 1,000 | Dis | NDCG | ✅ | ✅ | ❌ | Video Action | ❌ | ❌ |
 | [HALLUCINOGEN](https://arxiv.org/pdf/2412.20622) | arXiv'24 | 2024.12.29 | - | - | - | - | - | - | - | - | - |
-| [CAOS](https://arxiv.org/pdf/2501.15046) | arXiv'25 | 2025.01.25 | - | - | - | - | - | - | - | - | - |
-| [Mirage in the Eyes](https://arxiv.org/pdf/2501.15269) | arXiv'25 | 2025.01.25 | - | - | - | - | - | - | - | - | - |
+| [CAOS](https://arxiv.org/pdf/2501.15046) | arXiv'25 | 2025.01.25 | - | - | - | - | - | - | Object Similarities | - | - |
+| [Mirage in the Eyes](https://arxiv.org/pdf/2501.15269) | arXiv'25 | 2025.01.25 | - | - | - | - | - | - | Attack/Attention Sink| - | - |
 | [LanP](https://arxiv.org/pdf/2502.12359) | arXiv'25 | 2025.02.17 | - | - | - | - | - | - | - | - | - |
 | [MedHallTune](https://arxiv.org/pdf/2502.20780) | arXiv'25 | 2025.02.28 | - | - | - | - | - | - | - | - | - |
 | [RePOPE](https://arxiv.org/pdf/2504.15707) | arXiv'25 | 2025.04.22 | - | - | - | - | - | - | - | - | - |
-| [Antidote](https://arxiv.org/pdf/2504.20468) | CVPR'25 | 2025.05.07 | - | - | - | - | - | - | - | - | - |
+| [Antidote](https://arxiv.org/pdf/2504.20468) | CVPR'25 | 2025.05.07 | - | - | - | - | - | - | Mitigation Method | - | - |
 | [QAVisualGenome & QA-FB15k](https://arxiv.org/pdf/2505.01958) | arXiv'25 | 2025.05.04 | - | - | - | - | - | - | - | - | - |
 | [Localizing Before Answering](https://arxiv.org/pdf/2505.00744) | arXiv'25 | 2025.05.05 | - | - | - | - | - | - | - | - | - |
 | [EmotionHallucer](https://arxiv.org/pdf/2505.11405) | arXiv'25 | 2025.05.16 | - | - | - | - | - | - | - | - | - |
@@ -396,6 +392,7 @@
 | [MVI-Bench](https://arxiv.org/pdf/2511.14159v1) | arXiv'25 | 2025.11.18 | - | - | - | - | - | - | - | - | - |
 | [PIH](https://arxiv.org/pdf/2601.05201v1) | arXiv'26 | 2026.01.08 | - | - | - | - | - | - | - | - | - |
 | [CFHR](https://arxiv.org/pdf/2602.05437v1) | arXiv'26 | 2026.02.05 | - | - | - | - | - | - | - | - | - |
+
 
 
 
