@@ -4,13 +4,33 @@
 
 ---
 - [Awesome MLLMs Hallucination](#awesome-Hallucinations-in-MLLMs)
-     - [Hallucination Benchmark](#Evaluation-Benchmark)
-     - [Hallucination Mitigation](#Mitigation)
      - [Survey](#Survey)
+     - [Hallucination Mitigation](#Mitigation_Method)
+     - [Hallucination Benchmark](#Evaluation_Benchmark)
+     
+| year | Method | Benchmark | summary | 
+|------|---------------------|------------------------|--------------------------|
 
+| 2023 | 11 篇               | 11 篇                                      | 28 篇          | 
+| 2024 | 89 篇               | 43 篇                                    | 139 篇         | 
+| 2025 | 144 篇              | 22 篇                                     | 167 篇         | 
+| 2026 | 18 篇               | 2 篇                                    | 20 篇          | 
+| 总计 | 262 篇              | 79 篇                                   | 355 篇         |
 
+## Survey
+1. [DEEP LEARNING APPROACHES ON IMAGE CAPTIONING: A REVIEW](https://arxiv.org/pdf/2201.12944.pdf) (22 August, 2023)
+2. [A Survey on Hallucination in Large Vision-Language Models](https://arxiv.org/pdf/2402.00253.pdf) (1 February, 2024)
+3. [Visual Hallucination: Definition, Quantification, and Prescriptive Remediations](https://arxiv.org/pdf/2403.17306.pdf) (26 March, 2024)
+4. [Hallucination of Multimodal Large Language Models: A Survey](https://arxiv.org/pdf/2404.18930) (29 April, 2024)  [![Star](https://img.shields.io/github/stars/showlab/Awesome-MLLM-Hallucination.svg?style=social&label=Star)](https://github.com/showlab/Awesome-MLLM-Hallucination)
+5. [Unveiling Hallucination in Text, Image, Video, and Audio Foundation Models: A Comprehensive Survey](https://arxiv.org/pdf/2405.09589) (20 May, 2024)
+6. [Benchmark Evaluations, Applications, and Challenges of Large Vision Language Models: A Survey](https://arxiv.org/pdf/2501.02189) (04 January 2025)  [![Star](https://img.shields.io/github/stars/zli12321/VLM-surveys.svg?style=social&label=Star)](https://github.com/zli12321/VLM-surveys)
+7. [Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges and Future Perspectives](https://arxiv.org/pdf/2503.19622) (18 March, 2025)
+8. [Exploring Hallucination of Large Multimodal Models in Video Understanding: Benchmark, Analysis and Mitigation](https://arxiv.org/pdf/2503.19622) (25 March, 2025) [![Star](https://img.shields.io/github/stars/Hongcheng-Gao/HAVEN.svg?style=social&label=Star)](https://github.com/Hongcheng-Gao/HAVEN)
+9. **The Mirage of Performance Gains**: [Why Contrastive Decoding Fails to Address Multimodal Hallucination](https://arxiv.org/pdf/2504.10020) (18 April, 2025)
+10. [A Survey of Multimodal Hallucination Evaluation and Detection](https://arxiv.org/pdf/2507.19024) (25 July, 2025)
+11. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (26 September, 2025)
 
-## Mitigation Method
+## Mitigation_Method
 
 | Method | Pub | Date |
 | ------ | ---- | ---- |
@@ -293,14 +313,14 @@
 
 ---
 
-## Evaluation-Benchmark
+## Evaluation_Benchmark
 
 | Benchmark | Pub | Date | Size | Task | Metric | Object | Attribute | Relation | Other | LLM Free | Human Annotation Free |
 |-----------|-----|------|------|------|--------|--------|-----------|----------|-------|----------|------------------------|
 | [CHAIR](https://arxiv.org/abs/1809.02156) | EMNLP'18 | 2018.09 | 5,000 | Gen | CHAIR | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | [POPE](https://arxiv.org/pdf/2305.10355.pdf) | EMNLP'23 | 2023.05 | 3,000 | Dis | Acc/P/R/F1 | ✅ | ❌ | ❌ | ❌ | ✅ | ✅ |
 | [MME](https://arxiv.org/pdf/2306.13394.pdf) | NeurIPS’25 | 2023.06.23 | 1,457 | Dis | Acc/Score | ✅ | ✅ | ❌ | ❌ | ✅ | ❌ |
-| [M-HalDetect](https://arxiv.org/pdf/2308.06394.pdf) | AAAI'24 | 2023.08 | - | Dis | Reward Score | - | - | - | Fine-grained annotations | - | - |
+| [M-HalDetect](https://arxiv.org/pdf/2308.06394.pdf) | AAAI'24 | 2023.08 | 16,000 | Dis | Reward Score | - | - | - | Fine-grained | ❌ | ❌ |
 | [CIEM](https://arxiv.org/pdf/2309.02301.pdf) | NeurIPS-W'23| 2023.09 | 40,367 | Dis | Acc/P/R/F1/Specificity | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | [HaELM](https://arxiv.org/pdf/2308.15126.pdf) | arXiv'23 | 2023.10.10 | 25,000 | Gen | LLM Rating | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |
 | [MMHal-Bench](https://arxiv.org/pdf/2309.14525.pdf) | ACL'24 | 2023.09.25 | 96 | Gen | LLM Rating | ✅ | ❌ | ❌ | Model Bias | ❌ | ✅ |
@@ -316,17 +336,17 @@
 | [FGHE](https://arxiv.org/pdf/2312.01701.pdf) | MMM'24 | 2023.12.04 | 200 | Dis | Acc/P/R/F | ✅ | ✅ | ✅ | Behaviour | ❌ | ❌ |
 | [OpenCHAIR](https://arxiv.org/pdf/2312.03631.pdf) | EMNLP'24 | 2023.12.06 | 2,000 | Gen | OpenCHAIR | ✅ | ✅ | ❌ | Open-Vocabulary | ❌ | ✅ |
 | [CorrelationQA](https://arxiv.org/pdf/2402.03757.pdf) | arXiv'24 | 2024.02.06 | 7,308 | Dis | Acc | ✅ | ❌ | ❌ | Spurious Images | ❌ | ✅ |
-| [ViGoR](https://arxiv.org/pdf/2402.06118.pdf) | arXiv'24 | 2024.02.09 | 16,000 | Gen | Fine-Grained Reward| ✅ | ✅ | ✅ | Grounding | - | - |
+| [ViGoR](https://arxiv.org/pdf/2402.06118.pdf) | arXiv'24 | 2024.02.09 | 16,000 | Gen | Fine-Grained Reward| ✅ | ✅ | ✅ | Grounding | ❌ | ❌ |
 | [VQAv2-IDK](https://arxiv.org/pdf/2402.09717.pdf) | ICASSP'24 | 2024.02.15 | 6,624 | Dis | Acc | ❌ | ❌ | ❌ | IDK (IK) | ✅ | ❌ |
 | [MHaluBench](https://arxiv.org/pdf/2402.03190.pdf) | ACL'24 | 2024.02.20 | 1,860 | Gen | Acc/P/R/F | ✅ | ✅ | ❌ | T2I | ✅ | ✅ |
 | [MAD-Bench](https://arxiv.org/pdf/2402.13220.pdf) | arXiv'24 | 2024.02.20 | 1,000 | Gen | Acc | ✅ | ✅ | ❌ | Deceptive Prompts | ✅ | ✅ |
 | [VHTest](https://arxiv.org/pdf/2402.14683v1.pdf) | ACL'24 | 2024.02.22 | 1,200 | Dis & Gen | Acc | ✅ | ✅ | ❌ | Visual Hallucination | ❌ | ❌ |
 | [Hal-Eval](https://arxiv.org/pdf/2402.15721.pdf) | ACMMM'24 | 2024.02.24 | 10,000 | Dis & Gen | Acc/Score | ✅ | ✅ | ✅ | Event Hallucination | ✅ | ❌ |
-| [Number Hallucinations](https://arxiv.org/pdf/2403.01373.pdf) | arXiv'24 | 2024.03.03 | - | Dis | Acc / Consistency | ✅ | ❌ | ❌ | Object Counting | - | - |
+| [Number Hallucinations](https://arxiv.org/pdf/2403.01373.pdf) | arXiv'24 | 2024.03.03 | 20,000 | Dis | Acc / Consistency | ✅ | ❌ | ❌ | Object Counting | - | - |
 | [EvalDial](https://arxiv.org/pdf/2403.10492.pdf) | arXiv'24 | 2024.03.15 | - | Dis & Gen| Acc | ✅ | - | - | Dialogue Hallucination| ❌ | ✅ |
 | [PHD](https://arxiv.org/pdf/2403.11116.pdf) | CVPR'25 | 2024.03.17 | 102,564 | Dis | PhD Index | ✅ | ✅ | ✅ | Sentiment | ❌ | ❌ |
 | [MM-UPD](https://arxiv.org/pdf/2403.20331) | arXiv'24 | 2024.03.29 | 2,095 | Dis | Acc | ❌ | ❌ | ❌ | Unsolvable (UPD) | ❌ | ❌ |
-| [ALOHa](https://arxiv.org/pdf/2404.02904v1.pdf) | arXiv'24 | 2024.04.03 | - | Gen | ALOHa | ✅ | - | - | Captioning | - | - |
+| [ALOHa](https://arxiv.org/pdf/2404.02904v1.pdf) | arXiv'24 | 2024.04.03 | - | Gen | ALOHa | ✅ | - | - | Captioning | ❌ | - |
 | [VALOR-EVAL](https://arxiv.org/pdf/2404.13874) | ACL'24 | 2024.04.22 | 211 | Gen | Faithfulness & Coverage | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ |
 | [THRONE](https://arxiv.org/pdf/2405.05256) | CVPR'24 | 2024.05.08 | 5,000 | Gen | P/R/F | ✅ | ❌ | ❌ | Free-form Generations | ❌ | ✅ |
 | [MRHal-Bench](https://arxiv.org/pdf/2405.11165) | NeurIPS'24 | 2024.05.18 | - | Gen | Preference Score | - | - | - | Multi-round Conv | ❌ | ✅ |
@@ -347,35 +367,35 @@
 | [MMINSTRUCT](https://arxiv.org/pdf/2407.15838) | arXiv'24 | 2024.07.22 | 973,000 | Gen | - | - | - | - | Instruction Tuning | - | - |
 | [Hallu-PI](https://arxiv.org/pdf/2408.01355) | arXiv'24 | 2024.08.02 | 1,260 | Dis | Acc | ✅ | ✅ | ✅ | Perturbed Inputs | - | - |
 | [Reefknot](https://arxiv.org/pdf/2408.09429) | ACL'25 | 2024.08.18 | 21,880 | Dis & Gen | R-score | ❌ | ❌ | ✅ | Perceptive / Cognitive | ❌ | ✅ |
-| [Pfram](https://arxiv.org/pdf/2409.01151) | arXiv'24 | 2024.09.02 | - | Dis | Pfram | ✅ | - | - | Param-Free Alignment | - | - |
+| [Pfram](https://arxiv.org/pdf/2409.01151) | arXiv'24 | 2024.09.02 | 1,600 | - | Pfram | ✅ | - | - | Param-Free Alignment | - | - |
 | [ODE](https://arxiv.org/abs/2409.09318) | CVPR'25 | 2024.09.14 | 8,786 | Dis & Gen | AMBER/Acc | ✅ | ✅ | ❌ | Open-Set | ✅ | ❌ |
 | [LLSAVisionQA](https://arxiv.org/pdf/2409.09748) | arXiv'24 | 2024.09.15 | 4,989 | Gen | Acc | - | - | - | Low-level Perception | - | - |
 | [CAST](https://arxiv.org/pdf/2409.11007) | arXiv'24 | 2024.09.17 | - | Dis & Gen | Similarity | - | - | - | Self-consistency | - | - |
 | [FIHA](https://arxiv.org/pdf/2409.13612) | arXiv'24 | 2024.09.20 | - | Dis & Gen | Acc/P/R/F1 | ✅ | ✅ | ✅ | Davidson Scene Graphs | - | ✅ |
 | [EventHallusion](https://arxiv.org/pdf/2409.16597) | arXiv'24 | 2024.09.25 | 711 | Dis & Gen | Accuracy | ❌ | ❌ | ❌ | Video Event | ❌ | ❌ |
 | [JourneyBench](https://arxiv.org/pdf/2409.12953) | arXiv'24 | 2024.09.25 | 13,500 | Dis & Gen | Acc | - | - | - | Imaginary VQA | - | ❌ |
-| [TUBench](https://arxiv.org/pdf/2410.04107) | arXiv'24 | 2024.10.05 | 2,354 | Dis | Acc | - | - | - | Unanswerable Qs | - | - |
+| [TUBench](https://arxiv.org/pdf/2410.04107) | arXiv'24 | 2024.10.05 | 2,354 | Dis | Acc/F1 | - | - | - | Unanswerable Qs | - | - |
 | [LongHallGen](https://arxiv.org/pdf/2410.09962) | arXiv'24 | 2024.10.13 | 6,485 | Dis & Gen | Accuracy | ✅ | ✅ | ❌ | Long Context | ❌ | ✅ |
-| [MM-SY](https://arxiv.org/pdf/2410.11302) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | Sycophancy | - | - |
-| [Magnifier Prompt](https://arxiv.org/pdf/2410.11701) | arXiv'24 | 2024.10.15 | - | - | - | - | - | - | Mitigation Prompt | - | - |
+| [MM-SY](https://arxiv.org/pdf/2410.11302) | arXiv'24 | 2024.10.15 | - | Dis | Sycophancy Rate | - | - | - | Sycophancy | - | - |
+| [Magnifier Prompt](https://arxiv.org/pdf/2410.11701) | arXiv'24 | 2024.10.15 | - | Gen | - | - | - | - | Mitigation Prompt | - | - |
 | [DeCo](https://arxiv.org/pdf/2410.11779) | arXiv'24 | 2024.10.15 | - | Gen | - | - | - | - | Decoding Method | - | - |
 | [CMM](https://arxiv.org/pdf/2410.12787) | arXiv'24 | 2024.10.16 | 2,400 | Dis | PA/HR | ❌ | ❌ | ❌ | Modality Dominance | ✅ | ❌ |
-| [Trust but Verify](https://arxiv.org/pdf/2410.13121) | arXiv'24 | 2024.10.17 | - | - | - | - | - | - | In the Wild Eval | - | - |
-| [Tri-HE](https://arxiv.org/pdf/2410.23114) | arXiv'24 | 2024.11.03 | - | - | - | - | - | - | Triplet-Level Eval | - | - |
-| [H-POPE](https://arxiv.org/pdf/2411.04077) | arXiv'24 | 2024.11.06 | - | Dis | Acc/P/R/F1 | ✅ | ✅ | ❌ | Coarse-to-fine | - | - |
+| [Trust but Verify](https://arxiv.org/pdf/2410.13121) | arXiv'24 | 2024.10.17 | 10,500 | Gen | hscore/tscore | ✅ | ✅ | - | In the Wild Eval | - | - |
+| [Tri-HE](https://arxiv.org/pdf/2410.23114) | arXiv'24 | 2024.11.03 | 1,920 | Dis | Acc | ✅ | - | ✅ | Triplet-Level Eval | - | - |
+| [H-POPE](https://arxiv.org/pdf/2411.04077) | arXiv'24 | 2024.11.06 | 1,920 | Dis | Acc/P/R/F1 | ✅ | ✅ | ❌ | Coarse-to-fine | - | - |
 | [VIDHAL](https://arxiv.org/pdf/2411.16771) | arXiv'24 | 2024.11.25 | 1,000 | Dis | NDCG | ✅ | ✅ | ❌ | Video Action | ❌ | ❌ |
-| [HALLUCINOGEN](https://arxiv.org/pdf/2412.20622) | arXiv'24 | 2024.12.29 | - | Dis & Gen | - | ✅ | - | - | Object Hallucination | - | - |
+| [HALLUCINOGEN](https://arxiv.org/pdf/2412.20622) | arXiv'24 | 2024.12.29 | 90,000 | Dis & Gen | Acc | ✅ | - | - | Object Hallucination | - | - |
 | [CAOS](https://arxiv.org/pdf/2501.15046) | arXiv'25 | 2025.01.25 | - | Gen | CAOS Score | ✅ | - | - | Object Similarities | - | - |
 | [Mirage in the Eyes](https://arxiv.org/pdf/2501.15269) | arXiv'25 | 2025.01.25 | - | Dis | Acc / HR | ✅ | ✅ | ✅ | Attack/Attention Sink | - | - |
 | [LanP](https://arxiv.org/pdf/2502.12359) | arXiv'25 | 2025.02.17 | 340 | Dis | Acc | ✅ | - | - | Language Priors | - | - |
-| [MedHallTune](https://arxiv.org/pdf/2502.20780) | arXiv'25 | 2025.02.28 | - | Dis & Gen | - | ✅ | - | - | Medical Context | - | - |
-| [RePOPE](https://arxiv.org/pdf/2504.15707) | arXiv'25 | 2025.04.22 | - | - | - | ✅ | - | - | Annotation Errors | - | - |
-| [Antidote](https://arxiv.org/pdf/2504.20468) | CVPR'25 | 2025.05.07 | - | - | - | ✅ | - | - | Counterfactual Mitigation | - | - |
+| [MedHallTune](https://arxiv.org/pdf/2502.20780) | arXiv'25 | 2025.02.28 | 1,000,000 | Dis & Gen | - | ✅ | - | - | Medical Context | - | - |
+| [RePOPE](https://arxiv.org/pdf/2504.15707) | arXiv'25 | 2025.04.22 | 3,000 | Dis | Acc/F1 | ✅ | - | - | Annotation Errors | - | - |
+| [Antidote](https://arxiv.org/pdf/2504.20468) | CVPR'25 | 2025.05.07 | - | Gen | Acc | ✅ | - | - | CP-Bench Mitigation | - | - |
 | [QAVisualGenome & QA-FB15k](https://arxiv.org/pdf/2505.01958) | arXiv'25 | 2025.05.04 | - | Dis & Gen | Acc | ✅ | ✅ | ✅ | Visual Object Halluc | - | - |
 | [Localizing Before Answering](https://arxiv.org/pdf/2505.00744) | arXiv'25 | 2025.05.05 | - | Gen | Acc / Loc | - | - | - | Grounded Medical | - | - |
 | [EmotionHallucer](https://arxiv.org/pdf/2505.11405) | arXiv'25 | 2025.05.16 | 2,742 | Dis | Acc | - | - | - | Emotion Psychology | - | - |
 | [MIRAGE](https://arxiv.org/pdf/2505.24238) | arXiv'25 | 2025.06.02 | 1,329 | Dis & Gen | Acc / Factuality | - | - | ✅ | Reasoning Chains | - | - |
-| [MMMC](https://arxiv.org/pdf/2507.07151) | arXiv'25 | 2025.07.09 | - | Dis & Gen | Acc | - | - | - | Modality Conflict | - | - |
+| [MMMC](https://arxiv.org/pdf/2507.07151) | arXiv'25 | 2025.07.09 | - | Dis & Gen | Acc | ✅ | ✅ | ✅ | Modality Conflict | - | - |
 | [LOTUS](https://arxiv.org/pdf/2507.19362) | arXiv'25 | 2025.07.25 | - | Dis | Alignment/Bias| - | - | - | Societal Bias/Pref | - | - |
 | [MIHBench](https://arxiv.org/pdf/2508.00726) | arXiv'25 | 2025.08.01 | - | Dis & Gen | Acc | ✅ | ❌ | ❌ | Multi-Image Reasoning | - | - |
 | [HOPE](https://arxiv.org/pdf/2508.06530) | arXiv'25 | 2025.08.03 | - | Gen | Precision Drop| ✅ | ✅ | - | Misleading Distractors | - | - |
@@ -392,16 +412,4 @@
 | [CFHR](https://arxiv.org/pdf/2602.05437v1) | arXiv'26 | 2026.02.05 | - | Dis | CFHR | - | - | - | Counterfactual | - | - |
 
 
-## Survey
-1. [DEEP LEARNING APPROACHES ON IMAGE CAPTIONING: A REVIEW](https://arxiv.org/pdf/2201.12944.pdf) (22 August, 2023)
-2. [A Survey on Hallucination in Large Vision-Language Models](https://arxiv.org/pdf/2402.00253.pdf) (1 February, 2024)
-3. [Visual Hallucination: Definition, Quantification, and Prescriptive Remediations](https://arxiv.org/pdf/2403.17306.pdf) (26 March, 2024)
-4. [Hallucination of Multimodal Large Language Models: A Survey](https://arxiv.org/pdf/2404.18930) (29 April, 2024)  [![Star](https://img.shields.io/github/stars/showlab/Awesome-MLLM-Hallucination.svg?style=social&label=Star)](https://github.com/showlab/Awesome-MLLM-Hallucination)
-5. [Unveiling Hallucination in Text, Image, Video, and Audio Foundation Models: A Comprehensive Survey](https://arxiv.org/pdf/2405.09589) (20 May, 2024)
-6. [Benchmark Evaluations, Applications, and Challenges of Large Vision Language Models: A Survey](https://arxiv.org/pdf/2501.02189) (04 January 2025)  [![Star](https://img.shields.io/github/stars/zli12321/VLM-surveys.svg?style=social&label=Star)](https://github.com/zli12321/VLM-surveys)
-7. [Image Captioning Evaluation in the Age of Multimodal LLMs: Challenges and Future Perspectives](https://arxiv.org/pdf/2503.19622) (18 March, 2025)
-8. [Exploring Hallucination of Large Multimodal Models in Video Understanding: Benchmark, Analysis and Mitigation](https://arxiv.org/pdf/2503.19622) (25 March, 2025) [![Star](https://img.shields.io/github/stars/Hongcheng-Gao/HAVEN.svg?style=social&label=Star)](https://github.com/Hongcheng-Gao/HAVEN)
-9. **The Mirage of Performance Gains**: [Why Contrastive Decoding Fails to Address Multimodal Hallucination](https://arxiv.org/pdf/2504.10020) (18 April, 2025)
-10. [A Survey of Multimodal Hallucination Evaluation and Detection](https://arxiv.org/pdf/2507.19024) (25 July, 2025)
-11. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (26 September, 2025)
 
