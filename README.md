@@ -7,14 +7,7 @@
      - [Survey](#Survey)
      - [Hallucination Mitigation](#Mitigation_Method)
      - [Hallucination Benchmark](#Evaluation_Benchmark)
-     
-| year | Method | Benchmark | summary | 
-|------|---------------------|------------------------|--------------------------|
-| 2023 | 11 篇              | 11 篇                                      | 28 篇          | 
-| 2024 | 89 篇               | 43 篇                                    | 139 篇         | 
-| 2025 | 144 篇              | 22 篇                                     | 167 篇         | 
-| 2026 | 18 篇               | 2 篇                                    | 20 篇          | 
-| 总计 | 262 篇              | 79 篇                                   | 355 篇         |
+
 
 ## Survey
 
@@ -377,8 +370,8 @@
 | [TUBench](https://arxiv.org/pdf/2410.04107) | arXiv'24 | 2024.10.05 | 2,354 | Dis | Acc/F1 | - | - | - | Unanswerable Qs | - | - |
 | [LongHallGen](https://arxiv.org/pdf/2410.09962) | arXiv'24 | 2024.10.13 | 6,485 | Dis & Gen | Accuracy | ✅ | ✅ | ❌ | Long Context | ❌ | ✅ |
 | [MM-SY](https://arxiv.org/pdf/2410.11302) | arXiv'24 | 2024.10.15 | - | Dis | Sycophancy Rate | - | - | - | Sycophancy | - | - |
-| [Magnifier Prompt](https://arxiv.org/pdf/2410.11701) | arXiv'24 | 2024.10.15 | - | Gen | - | - | - | - | Mitigation Prompt | - | - |
-| [DeCo](https://arxiv.org/pdf/2410.11779) | arXiv'24 | 2024.10.15 | - | Gen | - | - | - | - | Decoding Method | - | - |
+| [Magnifier Prompt](https://arxiv.org/pdf/2410.11701) | arXiv'24 | 2024.10.15 | - | Gen | - | ✅ | ❌ | ❌ | Mitigation Prompt | - | - |
+| [DeCo](https://arxiv.org/pdf/2410.11779) | arXiv'24 | 2024.10.15 | - | Gen | - | ✅ | - | - | Decoding Method | - | - |
 | [CMM](https://arxiv.org/pdf/2410.12787) | arXiv'24 | 2024.10.16 | 2,400 | Dis | PA/HR | ❌ | ❌ | ❌ | Modality Dominance | ✅ | ❌ |
 | [Trust but Verify](https://arxiv.org/pdf/2410.13121) | arXiv'24 | 2024.10.17 | 10,500 | Gen | hscore/tscore | ✅ | ✅ | - | In the Wild Eval | - | - |
 | [Tri-HE](https://arxiv.org/pdf/2410.23114) | arXiv'24 | 2024.11.03 | 1,920 | Dis | Acc | ✅ | - | ✅ | Triplet-Level Eval | - | - |
@@ -388,11 +381,11 @@
 | [CAOS](https://arxiv.org/pdf/2501.15046) | arXiv'25 | 2025.01.25 | - | Gen | CAOS Score | ✅ | - | - | Object Similarities | - | - |
 | [Mirage in the Eyes](https://arxiv.org/pdf/2501.15269) | arXiv'25 | 2025.01.25 | - | Dis | Acc / HR | ✅ | ✅ | ✅ | Attack/Attention Sink | - | - |
 | [LanP](https://arxiv.org/pdf/2502.12359) | arXiv'25 | 2025.02.17 | 340 | Dis | Acc | ✅ | - | - | Language Priors | - | - |
-| [MedHallTune](https://arxiv.org/pdf/2502.20780) | arXiv'25 | 2025.02.28 | 1,000,000 | Dis & Gen | - | ✅ | - | - | Medical Context | - | - |
+| [MedHallTune](https://arxiv.org/pdf/2502.20780) | arXiv'25 | 2025.02.28 | 1,000,000 | Dis & Gen | - | ✅ | ✅ | - | Medical Context | - | - |
 | [RePOPE](https://arxiv.org/pdf/2504.15707) | arXiv'25 | 2025.04.22 | 3,000 | Dis | Acc/F1 | ✅ | - | - | Annotation Errors | - | - |
 | [Antidote](https://arxiv.org/pdf/2504.20468) | CVPR'25 | 2025.05.07 | - | Gen | Acc | ✅ | - | - | CP-Bench Mitigation | - | - |
 | [QAVisualGenome & QA-FB15k](https://arxiv.org/pdf/2505.01958) | arXiv'25 | 2025.05.04 | - | Dis & Gen | Acc | ✅ | ✅ | ✅ | Visual Object Halluc | - | - |
-| [Localizing Before Answering](https://arxiv.org/pdf/2505.00744) | arXiv'25 | 2025.05.05 | - | Gen | Acc / Loc | - | - | - | Grounded Medical | - | - |
+| [Localizing Before Answering](https://arxiv.org/pdf/2505.00744) | arXiv'25 | 2025.05.05 | 67,000 | Gen | Acc / Loc | ✅ | - | - | Grounded Medical | - | - |
 | [EmotionHallucer](https://arxiv.org/pdf/2505.11405) | arXiv'25 | 2025.05.16 | 2,742 | Dis | Acc | - | - | - | Emotion Psychology | - | - |
 | [MIRAGE](https://arxiv.org/pdf/2505.24238) | arXiv'25 | 2025.06.02 | 1,329 | Dis & Gen | Acc / Factuality | - | - | ✅ | Reasoning Chains | - | - |
 | [MMMC](https://arxiv.org/pdf/2507.07151) | arXiv'25 | 2025.07.09 | - | Dis & Gen | Acc | ✅ | ✅ | ✅ | Modality Conflict | - | - |
@@ -406,10 +399,17 @@
 | [ColorBlindnessEval](https://arxiv.org/pdf/2509.19070) | arXiv'25 | 2025.09.23 | 500 | Dis & Gen | Acc | - | - | - | Color Blindness Tests | - | - |
 | [Common-O Bench](https://arxiv.org/pdf/2511.03768v1) | arXiv'25 | 2025.11.05 | - | - | - | - | - | ✅ | Reasoning Across Scenes| - | - |
 | [Causal-HalBench](https://arxiv.org/pdf/2511.10268v1) | arXiv'25 | 2025.11.13 | - | - | - | ✅ | - | - | Causal Intervention | - | - |
-| [What Color Is It](https://arxiv.org/pdf/2511.13400v2) | arXiv'25 | 2025.11.17 | - | - | - | - | - | - | Text-Interference | - | - |
+| [What Color Is It](https://arxiv.org/pdf/2511.13400v2) | arXiv'25 | 2025.11.17 | - | - | - | ❌ | ✅ | ❌ | Text-Interference | - | - |
 | [MVI-Bench](https://arxiv.org/pdf/2511.14159v1) | arXiv'25 | 2025.11.18 | 1,248 | Dis & Gen | MVI-Sensitivity | ✅ | ✅ | ✅ | Misleading Visual | - | - |
 | [PIH](https://arxiv.org/pdf/2601.05201v1) | arXiv'26 | 2026.01.08 | - | Gen | PIH Ablation | ✅ | - | - | Prompt-Induced | - | - |
 | [CFHR](https://arxiv.org/pdf/2602.05437v1) | arXiv'26 | 2026.02.05 | - | Dis | CFHR | - | - | - | Counterfactual | - | - |
 
 
+| year | Method | Benchmark | summary | 
+|------|--------|-----------|---------|
+| 2023 | 11     | 11        | 28      | 
+| 2024 | 89     | 43        | 139     | 
+| 2025 | 144    | 22        | 167     | 
+| 2026 | 18     | 2         | 20      | 
+| summary | 262    | 79         | 355     |
 
