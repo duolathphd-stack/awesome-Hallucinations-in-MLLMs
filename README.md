@@ -5,6 +5,7 @@
 ---
 - [Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
     - [Publication Statistics](#publication-statistics)
+    - [Causes of Hallucination](#causes-of-hallucination)
     - [Survey](#survey)
     - [Hallucination Mitigation](#hallucination-mitigation)
         - [Training & Alignment](#training--alignment)
@@ -16,6 +17,11 @@
 
 
 ## 📊 Publication Statistics
+
+<p align="center">
+  <img src="./images/your_stat_figure1_bar_chart.png" width="48%" alt="Publication Trend Bar Chart" />
+  <img src="./images/your_stat_figure2_pie_chart.png" width="48%" alt="Methodology Distribution Pie Chart" />
+</p>
 
 The rapid growth of research on Multimodal Large Language Model (MLLM) hallucinations. (Updated to March 2026)
 
@@ -29,7 +35,25 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 | **Total**| **276** | **79** | **11** | **366** |
 
 > *Note: The year represents the initial arXiv publication date or the conference acceptance date. 2026 data currently includes papers up to early March.*
+> 
+## 🧠 Causes of Hallucination
 
+<p align="center">
+  <img src="./images/your_causes_illustration.png" width="85%" alt="Causes of Hallucination in MLLMs" />
+</p>
+
+The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issues that stem from multiple stages of the model architecture and training pipeline. Based on recent literature, the fundamental causes can be categorized into four primary dimensions:
+
+| Dimension | Specific Causes | Description |
+| :--- | :--- | :--- |
+| **1. Training Data (数据源头)** | Statistical Bias & Co-occurrence | Models memorize statistical shortcuts from pre-training data (e.g., assuming a "keyboard" is always present if a "monitor" is in the image). |
+| | Toxic / Noisy Captions | Web-crawled image-text pairs often contain irrelevant descriptions, leading to misaligned visual-textual mapping. |
+| **2. Vision Encoder (视觉感知)** | Resolution Limitations | Standard vision encoders (like CLIP) often use fixed resolutions (e.g., 224x224), causing the loss of fine-grained details or small objects. |
+| | Semantic Information Loss | Pre-trained encoders may focus primarily on global semantics, neglecting structural, spatial, or OCR-level local features. |
+| **3. Modality Alignment (模态对齐)** | Projector Entanglement | The connector (e.g., MLP or Q-Former) fails to strictly align visual tokens with text space, causing semantic drift. |
+| | Modality Competition | During attention computation, strong text features often "hijack" or dilute visual signals, reducing visual reliance. |
+| **4. LLM Decoder (语言推理)** | Language Priors / Inertia | The LLM tends to autoregressively generate fluent but ungrounded text based on its powerful language priors rather than visual evidence. |
+| | Overconfidence & Sycophancy | The model exhibits epistemic overconfidence and tends to cater to the user's misleading prompts (sycophancy) rather than factual visuals. |
 
 ## Survey
 
