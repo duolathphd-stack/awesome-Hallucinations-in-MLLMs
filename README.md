@@ -371,7 +371,7 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [Ground What You See](https://arxiv.org/pdf/2601.06224) | arXiv'26 | 2026.01.09 | **Diversified External Feedback**: Combines diversity sampling and external feedback loops for black-box optimization at generation. |
 | [Hallucination Begins Where Saliency Drops](https://arxiv.org/pdf/2601.20279v1) | arXiv'26 | 2026.01.28 | **Saliency Interception Gate**: Actively refuses to answer when image saliency calculated by external tools falls below a threshold. |
 | [Countering the Over-Reliance Trap](https://arxiv.org/pdf/2601.22451v1) | arXiv'26 | 2026.01.30 | **Pipeline Self-Verification**: Designs a black-box self-verification pipeline including proposition extraction, re-checking, and logic judgment. |
-| [A Training-Free Hallucination Mitigation Framework](https://arxiv.org/pdf/2601.00659v1) | arXiv'26 | 2026.01.02 | **Black-Box Universal Framework**: Integrates multiple plug-and-play external training-free methods into a universal suppression framework. |
+| [CRoPS](https://arxiv.org/pdf/2601.00659v1) | arXiv'26 | 2026.01.02 | **Black-Box Universal Framework**: Integrates multiple plug-and-play external training-free methods into a universal suppression framework. |
 ---
 
 ## Evaluation_Benchmark
