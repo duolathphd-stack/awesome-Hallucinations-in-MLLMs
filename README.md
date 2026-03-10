@@ -16,7 +16,7 @@
   
 
 
- ## Publication Statistics 📊
+ ## Publication Statistics 
 
 <p align="center">
   <img src="./paper_number.png" width="85%" alt="Publication Trend Bar Chart" />
@@ -39,7 +39,7 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 
 > *Note: The year represents the initial arXiv publication date or the conference acceptance date. 2026 data currently includes papers up to early March.*
 > 
-##  Causes of Hallucination🧠
+##  Causes of Hallucination
 
 <p align="center">
   <img src="./hall_cause.png" width="85%" alt="Hierarchical Causes of Hallucination in MLLMs" />
