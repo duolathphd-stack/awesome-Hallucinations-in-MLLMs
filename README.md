@@ -5,7 +5,7 @@
 ---
 - [Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
     - [Survey](#survey)
-    - [Hallucination Mitigation Method](#hallucination-mitigation--method)
+    - [Hallucination Mitigation](#hallucination-mitigation)
         - [Training & Alignment](#training--alignment)
         - [Decoding Strategies](#decoding-strategies)
         - [Attention & Architecture Intervention](#attention--architecture-intervention)
