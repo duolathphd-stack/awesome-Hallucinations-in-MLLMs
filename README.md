@@ -19,8 +19,8 @@
 ## 📊 Publication Statistics
 
 <p align="center">
-  <img src="./images/your_stat_figure1_bar_chart.png" width="48%" alt="Publication Trend Bar Chart" />
-  <img src="./images/your_stat_figure2_pie_chart.png" width="48%" alt="Methodology Distribution Pie Chart" />
+  <img src="./Hallucination_Research_Trends.pdf" width="48%" />
+  <img src="./method_tree.pdf" width="48%"  />
 </p>
 
 The rapid growth of research on Multimodal Large Language Model (MLLM) hallucinations. (Updated to March 2026)
@@ -55,6 +55,7 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | **4. Model-Level**<br>*(Core LLM Issues)* | Suboptimal Training Objective | The autoregressive next-token prediction path favors linguistic plausibility over factual correctness. |
 | | Sampling Stochasticity | Randomness in the decoding process (e.g., Top-p/Top-k sampling) can result in selecting low-probability or incorrect tokens over correct/factual ones. |
 | **5. Response-Level**<br>*(Final Output Manifestation)* | Sycophancy | To maximize user agreement and appear helpful/compliant, the model agrees with the user's biased or incorrect premise (e.g., agreeing that the sky is green). |
+| | Contextual Inertia / Snowball Effect | Initial small errors (e.g., "The cat is flying") propagate and amplify throughout the generation like a snowball, leading to an elaborately fabricated response (compounded hallucination). |
 
 ## Survey
 
