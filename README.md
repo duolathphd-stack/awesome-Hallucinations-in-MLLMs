@@ -19,8 +19,11 @@
 ## 📊 Publication Statistics
 
 <p align="center">
-  <img src="./Hallucination_Research_Trends.pdf" width="48%" />
-  <img src="./method_tree.pdf" width="48%"  />
+  <img src="./paper_number.png" width="85%" alt="Publication Trend Bar Chart" />
+</p>
+
+<p align="center">
+  <img src="./method_tree.png" width="85%" alt="Methodology Distribution Tree" />
 </p>
 
 The rapid growth of research on Multimodal Large Language Model (MLLM) hallucinations. (Updated to March 2026)
@@ -39,7 +42,7 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 ## 🧠 Causes of Hallucination
 
 <p align="center">
-  <img src="./hall_cause.pdf" width="85%" alt="Hierarchical Causes of Hallucination in MLLMs" />
+  <img src="./hall_cause.png" width="85%" alt="Hierarchical Causes of Hallucination in MLLMs" />
 </p>
 
 The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issues that compound across the entire pipeline, from initial data input to the final generated text. Based on the hierarchical framework illustrated above, the fundamental causes can be categorized into five distinct levels:
