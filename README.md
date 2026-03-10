@@ -1,22 +1,31 @@
-# Decoding the Mirage: A Pipeline-Oriented Survey of Hallucinations in MLLMs(Awesome-MLLMs-Hallucination) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# 🌟 Decoding the Mirage: A Pipeline-Oriented Survey of Hallucinations in MLLMs (Awesome-MLLMs-Hallucination)
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+[![arXiv](https://img.shields.io/badge/arXiv-2603.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2603.XXXXX)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FYourName%2FAwesome-MLLMs-Hallucination&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
+> A comprehensive, up-to-date, and pipeline-oriented survey on hallucinations in Multimodal Large Language Models (MLLMs). This repository systematically categorizes publication trends, root causes, mitigation strategies, and evaluation benchmarks.
 
 ---
-- [🌟 Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
-    - [📊 Publication Statistics](#publication-statistics)
-    - [🧠 Causes of Hallucination](#causes-of-hallucination)
-    - [📚 Survey](#survey)
-    - [🛡️ Hallucination Mitigation](#hallucination-mitigation)
-        - [⚖️ Training & Alignment](#training--alignment)
-        - [🎛️ Decoding Strategies](#decoding-strategies)
-        - [🧩 Attention & Architecture Intervention](#attention--architecture-intervention)
-        - [💡 External Augmentation & Prompting](#external-augmentation--prompting)
-    - [🎯 Hallucination Benchmark](#hallucination-benchmark)
-  
 
+## 📑 Table of Contents
+- [📊 Publication Statistics](#-publication-statistics)
+- [🧠 Causes of Hallucination](#-causes-of-hallucination)
+- [📚 Survey](#-survey)
+- [🛡️ Hallucination Mitigation](#️-hallucination-mitigation)
+    - [Training & Alignment](#training--alignment)
+    - [Decoding Strategies](#decoding-strategies)
+    - [Attention & Architecture Intervention](#attention--architecture-intervention)
+    - [External Augmentation & Prompting](#external-augmentation--prompting)
+- [🎯 Evaluation Benchmark](#-evaluation-benchmark)
+- [📝 Citation](#-citation)
+- [🤝 Contributing](#-contributing)
 
- ## Publication Statistics 
+---
+
+## 📊 Publication Statistics
 
 <p align="center">
   <img src="./paper_number.png" width="85%" alt="Publication Trend Bar Chart" />
@@ -26,7 +35,7 @@
   <img src="./method_tree.png" width="85%" alt="Methodology Distribution Tree" />
 </p>
 
-The rapid growth of research on Multimodal Large Language Model (MLLM) hallucinations. (Updated to March 2026)
+The rapid growth of research on Multimodal Large Language Model (MLLM) hallucinations. *(Updated to March 2026)*
 
 | Year | Mitigation Methods | Evaluation Benchmarks | Surveys & Reviews | **Total Papers** |
 | :---: | :---: | :---: | :---: | :---: |
@@ -37,9 +46,11 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 | **2026** | 18 | 2 | 0 | **20** |
 | **Total**| **276** | **79** | **11** | **366** |
 
-> *Note: The year represents the initial arXiv publication date or the conference acceptance date. 2026 data currently includes papers up to early March.*
-> 
-##  Causes of Hallucination
+> 💡 **Tip:** The year represents the initial arXiv publication date or the conference acceptance date. The statistics charts are auto-generated. You can reproduce or update them by running our python scripts using Matplotlib.
+
+---
+
+## 🧠 Causes of Hallucination
 
 <p align="center">
   <img src="./hall_cause.png" width="85%" alt="Hierarchical Causes of Hallucination in MLLMs" />
@@ -60,8 +71,9 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | **5. Response-Level**<br>*(Final Output Manifestation)* | Sycophancy | To maximize user agreement and appear helpful/compliant, the model agrees with the user's biased or incorrect premise (e.g., agreeing that the sky is green). |
 | | Contextual Inertia / Snowball Effect | Initial small errors (e.g., "The cat is flying") propagate and amplify throughout the generation like a snowball, leading to an elaborately fabricated response (compounded hallucination). |
 
-## Survey
+---
 
+## 📚 Survey
 
 1. [A Survey on Hallucination in Large Vision-Language Models](https://arxiv.org/pdf/2402.00253.pdf) (2024.02.01)
 2. [Visual Hallucination: Definition, Quantification, and Prescriptive Remediations](https://arxiv.org/pdf/2403.17306.pdf) (2024.03.26)
@@ -73,10 +85,15 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 8. [A Survey of Multimodal Hallucination Evaluation and Detection](https://arxiv.org/pdf/2507.19024) (2025.07.25)
 9. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (2025.09.26)
 
+---
 
-## Hallucination Mitigation 
+## 🛡️ Hallucination Mitigation 
 
-### Training & Alignment
+*Click on each category to expand and view the detailed summary of papers.*
+
+<details open>
+<summary><h3>⚖️ Training & Alignment</h3></summary>
+
 *Basis: Actually updates the underlying weights of the model through pre-training, instruction tuning, reinforcement learning, or preference optimization (e.g., DPO).*
 
 | Method | Pub | Date | Methodology |
@@ -152,9 +169,11 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [Cost-efficient Difficulty-aware Preference Optimization](https://arxiv.org/pdf/2601.00623v1) | arXiv'26 | 2026.01.02 | **Difficulty-Aware DPO**: Introduces a difficulty-aware mechanism for low-cost preference optimization, prioritizing hard hallucination samples. |
 | [Beyond Superficial Unlearning](https://arxiv.org/pdf/2601.16527v1) | arXiv'26 | 2026.01.23 | **Robust Unlearning**: Proposes a sharpness-aware unlearning mechanism to thoroughly erase deep associations causing hallucinations in model parameters. |
 
----
+</details>
 
-### Decoding Strategies
+<details>
+<summary><h3>🎛️ Decoding Strategies</h3></summary>
+
 *Basis: Entirely training-free. Intervenes in the autoregressive generation phase (Logits layer) by ensembling probabilities, contrasting samples, or calibrating confidence to suppress hallucinations.*
 
 | Method | Pub | Date | Methodology |
@@ -216,9 +235,11 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [Residual Decoding](https://arxiv.org/pdf/2602.01047v1) | arXiv'26 | 2026.02.01 | **Residual Guidance Decoding**: Uses history-aware residual information to guide current token generation for consistency. |
 | [Model-Aware Contrastive Decoding](https://arxiv.org/pdf/2602.01740v1) | arXiv'26 | 2026.02.02 | **Model-Aware Contrastive Decoding**: Uses counterfactual data as negative references to apply adaptive contrastive penalties based on the model's perception tendencies. |
 
----
+</details>
 
-### Attention & Architecture Intervention
+<details>
+<summary><h3>🧩 Attention & Architecture Intervention</h3></summary>
+
 *Basis: Completely training-free. Deep dives into the Transformer structure to edit the latent space, prune attention heads, or intervene in the KV Cache to cut off hallucination-inducing feature pathways.*
 
 | Method | Pub | Date | Methodology |
@@ -303,9 +324,11 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [Contrastive Neuron Steering](https://arxiv.org/pdf/2602.00621v1) | arXiv'26 | 2026.01.31 | **Neuron Steering Vector**: Pinpoints individual neurons causing differences and applies vector steering. |
 | [KVSmooth](https://arxiv.org/pdf/2602.04268v1) | arXiv'26 | 2026.02.04 | **Numerical Smoothing**: Applies smoothing operations to the KV Cache to mitigate attention collapse caused by extreme activation values. |
 
----
+</details>
 
-### External Augmentation & Prompting
+<details>
+<summary><h3>💡 External Augmentation & Prompting</h3></summary>
+
 *Basis: Completely black-box without touching model weights or underlying architectures. Utilizes prompt engineering, Retrieval-Augmented Generation (RAG), external Agents, or self-reflection consistency to filter hallucinations.*
 
 | Method | Pub | Date | Methodology |
@@ -372,9 +395,15 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [Hallucination Begins Where Saliency Drops](https://arxiv.org/pdf/2601.20279v1) | arXiv'26 | 2026.01.28 | **Saliency Interception Gate**: Actively refuses to answer when image saliency calculated by external tools falls below a threshold. |
 | [Countering the Over-Reliance Trap](https://arxiv.org/pdf/2601.22451v1) | arXiv'26 | 2026.01.30 | **Pipeline Self-Verification**: Designs a black-box self-verification pipeline including proposition extraction, re-checking, and logic judgment. |
 | [CRoPS](https://arxiv.org/pdf/2601.00659v1) | arXiv'26 | 2026.01.02 | **Black-Box Universal Framework**: Integrates multiple plug-and-play external training-free methods into a universal suppression framework. |
+
+</details>
+
 ---
 
-## Evaluation_Benchmark
+## 🎯 Evaluation Benchmark
+
+<details open>
+<summary><h3>Comprehensive Benchmark List</h3></summary>
 
 | Benchmark | Pub | Date | Size | Task | Metric | Object | Attribute | Relation | Other | LLM Free | Human Annotation Free |
 |-----------|-----|------|------|------|--------|--------|-----------|----------|-------|----------|------------------------|
@@ -472,6 +501,22 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [PIH](https://arxiv.org/pdf/2601.05201v1) | arXiv'26 | 2026.01.08 | N/A | Gen | PIH Ablation | ✅ | ❌ | ❌ | Prompt-Induced | ✅ | ✅ |
 | [CFHR](https://arxiv.org/pdf/2602.05437v1) | arXiv'26 | 2026.02.05 | N/A | Dis | CFHR | ❌ | ❌ | ❌ | Counterfactual | ❌ | ❌ |
 
+</details>
 
+---
 
+## 📝 Citation
 
+If you find our survey paper, this repository, or the hierarchical causes taxonomy useful for your research, please consider citing our work:
+
+```bibtex
+
+```
+## 🤝 Contributing
+We actively welcome contributions! The field of MLLM hallucinations is moving incredibly fast. If you find a new paper that fits into our taxonomy (especially elegant training-free methods, novel architecture interventions, or robust benchmarks), please feel free to open a Pull Request.
+
+1.Format your addition strictly according to the existing tables.
+
+2.Keep the Methodology description concise (one sentence limit).
+
+3.Ensure the Date aligns with the initial arXiv release or conference acceptance.
