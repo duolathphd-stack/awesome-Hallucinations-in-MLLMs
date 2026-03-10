@@ -27,7 +27,7 @@
 9. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (2025.09.26)
 
 
-## Hallucination Mitigation Method
+## Hallucination Mitigation 
 
 ### Training & Alignment
 | Method | Pub | Date | 核心机制 (Methodology) |
