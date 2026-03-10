@@ -3,16 +3,16 @@
 
 
 ---
-- [Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
-    - [Publication Statistics](#publication-statistics)
-    - [Causes of Hallucination](#causes-of-hallucination)
-    - [Survey](#survey)
-    - [Hallucination Mitigation](#hallucination-mitigation)
-        - [Training & Alignment](#training--alignment)
-        - [Decoding Strategies](#decoding-strategies)
-        - [Attention & Architecture Intervention](#attention--architecture-intervention)
-        - [External Augmentation & Prompting](#external-augmentation--prompting)
-    - [Hallucination Benchmark](#hallucination-benchmark)
+- [🌟 Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
+    - [📊 Publication Statistics](#publication-statistics)
+    - [🧠 Causes of Hallucination](#causes-of-hallucination)
+    - [📚 Survey](#survey)
+    - [🛡️ Hallucination Mitigation](#hallucination-mitigation)
+        - [⚖️ Training & Alignment](#training--alignment)
+        - [🎛️ Decoding Strategies](#decoding-strategies)
+        - [🧩 Attention & Architecture Intervention](#attention--architecture-intervention)
+        - [💡 External Augmentation & Prompting](#external-augmentation--prompting)
+    - [🎯 Hallucination Benchmark](#hallucination-benchmark)
   
 
 
