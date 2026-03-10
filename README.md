@@ -5,7 +5,7 @@
 ---
 - [Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
     - [Survey](#survey)
-    - [Hallucination Mitigation](#hallucination-mitigation)
+    - [Hallucination Mitigation Method](#hallucination-mitigation--method)
         - [Training & Alignment](#training--alignment)
         - [Decoding Strategies](#decoding-strategies)
         - [Attention & Architecture Intervention](#attention--architecture-intervention)
@@ -27,7 +27,7 @@
 9. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (2025.09.26)
 
 
-## Mitigation Method
+## Hallucination Mitigation Method
 
 ### Training & Alignment
 | Method | Pub | Date | 核心机制 (Methodology) |
