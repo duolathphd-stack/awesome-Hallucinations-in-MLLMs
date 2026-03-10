@@ -5,11 +5,11 @@
 ---
 - [Awesome MLLMs Hallucination](#awesome-Hallucinations-in-MLLMs)
      - [Survey](#Survey)
-     - [Hallucination Mitigation](#Training_and_Alignment)
-            - [Training & Alignment](#Mitigation_Method)
-            - [Decoding Strategies](#Decoding_Strategies)
-            - [Attention & Architecture Intervention](#Attention_and_Architecture_Intervention)
-            - [External Augmentation & Prompting](#External_Augmentation_and_Prompting)
+     - [Hallucination Mitigation](#Mitigation-Method)
+     -  - [Training & Alignment](#Training-&-Alignment)
+            - [Decoding Strategies](#Decoding-Strategies)
+            - [Attention & Architecture Intervention](#Attention-&-Architecture-Intervention)
+            - [External Augmentation & Prompting](#External-Augmentation-&-Prompting)
      - [Hallucination Benchmark](#Evaluation_Benchmark)
 
 
@@ -27,9 +27,9 @@
 9. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (2025.09.26)
 
 
-## Mitigation_Method
+## Mitigation Method
 
-### Training_and_Alignment
+### Training & Alignment
 | Method | Pub | Date | 核心机制 (Methodology) |
 | :--- | :--- | :--- | :--- |
 | [ObjMLM](https://arxiv.org/pdf/2210.07688.pdf) | arXiv'23 | 2023.2.10 | **预训练**：提出了一种全新的视觉-语言预训练目标 (VLP objective) 来抑制幻觉。 |
@@ -105,7 +105,7 @@
 
 ---
 
-### Decoding_Strategies
+### Decoding Strategies
 
 | Method | Pub | Date | 核心机制 (Methodology) |
 | :--- | :--- | :--- | :--- |
@@ -168,7 +168,7 @@
 
 ---
 
-### Attention_and_Architecture_Intervention
+### Attention & Architecture Intervention
 
 
 | Method | Pub | Date | 核心机制 (Methodology) |
@@ -255,7 +255,7 @@
 
 ---
 
-### External_Augmentation_and_Prompting
+### External Augmentation & Prompting
 
 | Method | Pub | Date | Methodology |
 | :--- | :--- | :--- | :--- |
