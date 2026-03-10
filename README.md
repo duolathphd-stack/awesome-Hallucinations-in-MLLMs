@@ -42,20 +42,19 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
   <img src="./hall_cause.pdf" width="85%" alt="Hierarchical Causes of Hallucination in MLLMs" />
 </p>
 
-[cite_start]The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issues that compound across the entire pipeline, from initial data input to the final generated text. Based on the hierarchical framework illustrated above, the fundamental causes can be categorized into five distinct levels:
+The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issues that compound across the entire pipeline, from initial data input to the final generated text. Based on the hierarchical framework illustrated above, the fundamental causes can be categorized into five distinct levels:
 
 | Hierarchical Level | Specific Causes | Description |
 | :--- | :--- | :--- |
-| **1. [cite_start]Data-Level**<br>*(Foundational Issues)* [cite: 58, 67] | [cite_start]Data Bias / Priors [cite: 74] | [cite_start]Overrepresentation of specific patterns or stereotypical object/social pairs (e.g., assuming a "keyboard" is always with a "monitor") creates a skewed distribution[cite: 71, 75]. |
-| | [cite_start]Data Scarcity / Fidelity [cite: 59, 61] | [cite_start]Incomplete, noisy, or low-resolution datasets lead to poor generalization[cite: 62, 64, 65, 66]. |
-| **2. [cite_start]Token-Level**<br>*(Interaction Issues)* [cite: 42, 43, 44] | [cite_start]Cross-Modal Attention Sparsity [cite: 29, 31] | [cite_start]Text tokens dominate the attention mechanism, causing the model to ignore or only weakly attend to visual tokens[cite: 32, 33, 34]. |
-| | [cite_start]Visual Token Redundancy [cite: 56] | [cite_start]Excessive, noisy, and overlapping visual tokens create information overload and confusion, leading to imbalanced cross-modal representation[cite: 45, 57]. |
-| **3. [cite_start]Module-Level**<br>*(Architectural Limitations)* [cite: 38, 40] | [cite_start]Vision Encoder: Limited Resolution [cite: 23, 24] | [cite_start]Hardware constraints or specific architecture choices result in the loss of fine-grained visual details[cite: 25, 26, 27, 28]. |
-| | [cite_start]Projector: Inadequate Projection [cite: 54] | [cite_start]Information bottlenecks in the connector lead to information loss, noise injection, or misalignment during modality mapping[cite: 41, 55]. |
-| **4. [cite_start]Model-Level**<br>*(Core LLM Issues)* [cite: 15, 37] | [cite_start]Suboptimal Training Objective [cite: 19] | [cite_start]The autoregressive next-token prediction path favors linguistic plausibility over factual correctness[cite: 20, 22, 38]. |
-| | [cite_start]Sampling Stochasticity [cite: 49] | [cite_start]Randomness in the decoding process (e.g., Top-p/Top-k sampling) can result in selecting low-probability or incorrect tokens over correct/factual ones[cite: 16, 46, 50, 52]. |
-| **5. [cite_start]Response-Level**<br>*(Final Output Manifestation)* [cite: 5, 14] | [cite_start]Sycophancy [cite: 3] | [cite_start]To maximize user agreement and appear helpful/compliant, the model agrees with the user's biased or incorrect premise (e.g., agreeing that the sky is green)[cite: 4, 6, 7, 9, 10]. |
-| | [cite_start]Contextual Inertia [cite: 47] | [cite_start]Initial small errors (e.g., "The cat is flying") propagate and amplify throughout the generation, leading to an elaborately fabricated response (compounded hallucination)[cite: 8, 11, 12, 48]. |
+| **1. Data-Level**<br>*(Foundational Issues)* | Data Bias / Priors | Overrepresentation of specific patterns or stereotypical object/social pairs (e.g., assuming a "keyboard" is always with a "monitor") creates a skewed distribution. |
+| | Data Scarcity / Fidelity | Incomplete, noisy, or low-resolution datasets lead to poor generalization. |
+| **2. Token-Level**<br>*(Interaction Issues)* | Cross-Modal Attention Sparsity | Text tokens dominate the attention mechanism, causing the model to ignore or only weakly attend to visual tokens. |
+| | Visual Token Redundancy | Excessive, noisy, and overlapping visual tokens create information overload and confusion, leading to imbalanced cross-modal representation. |
+| **3. Module-Level**<br>*(Architectural Limitations)* | Vision Encoder: Limited Resolution | Hardware constraints or specific architecture choices result in the loss of fine-grained visual details. |
+| | Projector: Inadequate Projection | Information bottlenecks in the connector lead to information loss, noise injection, or misalignment during modality mapping. |
+| **4. Model-Level**<br>*(Core LLM Issues)* | Suboptimal Training Objective | The autoregressive next-token prediction path favors linguistic plausibility over factual correctness. |
+| | Sampling Stochasticity | Randomness in the decoding process (e.g., Top-p/Top-k sampling) can result in selecting low-probability or incorrect tokens over correct/factual ones. |
+| **5. Response-Level**<br>*(Final Output Manifestation)* | Sycophancy | To maximize user agreement and appear helpful/compliant, the model agrees with the user's biased or incorrect premise (e.g., agreeing that the sky is green). |
 
 ## Survey
 
