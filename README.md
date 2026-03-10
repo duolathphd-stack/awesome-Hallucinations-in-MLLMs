@@ -12,7 +12,7 @@
         - [Attention & Architecture Intervention](#attention--architecture-intervention)
         - [External Augmentation & Prompting](#external-augmentation--prompting)
     - [Hallucination Benchmark](#hallucination-benchmark)
-    - []
+  
 
 
 ## 📊 Publication Statistics
@@ -29,7 +29,8 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 | **Total**| **276** | **79** | **11** | **366** |
 
 > *Note: The year represents the initial arXiv publication date or the conference acceptance date. 2026 data currently includes papers up to early March.*
-> 
+
+
 ## Survey
 
 
@@ -440,11 +441,5 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 | [CFHR](https://arxiv.org/pdf/2602.05437v1) | arXiv'26 | 2026.02.05 | N/A | Dis | CFHR | ❌ | ❌ | ❌ | Counterfactual | ❌ | ❌ |
 
 
-| year | Method | Benchmark | summary | 
-|------|--------|-----------|---------|
-| 2023 | 11     | 11        | 28      | 
-| 2024 | 89     | 43        | 139     | 
-| 2025 | 144    | 22        | 167     | 
-| 2026 | 18     | 2         | 20      | 
-| summary | 262    | 79         | 355     |
+
 
