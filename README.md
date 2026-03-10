@@ -4,6 +4,7 @@
 
 ---
 - [Awesome MLLMs Hallucination](#awesome-mllms-hallucination)
+    - [Publication Statistics](#publication-statistics)
     - [Survey](#survey)
     - [Hallucination Mitigation](#hallucination-mitigation)
         - [Training & Alignment](#training--alignment)
@@ -11,8 +12,24 @@
         - [Attention & Architecture Intervention](#attention--architecture-intervention)
         - [External Augmentation & Prompting](#external-augmentation--prompting)
     - [Hallucination Benchmark](#hallucination-benchmark)
+    - []
 
 
+## 📊 Publication Statistics
+
+The rapid growth of research on Multimodal Large Language Model (MLLM) hallucinations. (Updated to March 2026)
+
+| Year | Mitigation Methods | Evaluation Benchmarks | Surveys & Reviews | **Total Papers** |
+| :---: | :---: | :---: | :---: | :---: |
+| **2018** | 0 | 1 | 0 | **1** |
+| **2023** | 17 | 11 | 1 | **29** |
+| **2024** | 96 | 43 | 4 | **143** |
+| **2025** | 145 | 22 | 6 | **173** |
+| **2026** | 18 | 2 | 0 | **20** |
+| **Total**| **276** | **79** | **11** | **366** |
+
+> *Note: The year represents the initial arXiv publication date or the conference acceptance date. 2026 data currently includes papers up to early March.*
+> 
 ## Survey
 
 
