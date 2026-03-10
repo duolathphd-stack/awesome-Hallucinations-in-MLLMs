@@ -1,10 +1,9 @@
 # 🌟 Decoding the Mirage: A Pipeline-Oriented Survey of Hallucinations in MLLMs (Awesome-MLLMs-Hallucination)
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![arXiv](https://img.shields.io/badge/arXiv-2603.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2603.XXXXX)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FYourName%2FAwesome-MLLMs-Hallucination&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 
 > A comprehensive, up-to-date, and pipeline-oriented survey on hallucinations in Multimodal Large Language Models (MLLMs). This repository systematically categorizes publication trends, root causes, mitigation strategies, and evaluation benchmarks.
 
