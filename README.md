@@ -91,7 +91,7 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [HA-DPO](https://arxiv.org/pdf/2311.16839.pdf) | **ICME'24** | 2023.11.28 | **Preference Optimization**: Constructs hallucination-aware data pairs and applies the DPO algorithm directly to update model weights. |
 | [FGHE](https://arxiv.org/pdf/2312.01701.pdf) | arXiv'23 | 2023.12.4 | **Fine-tuning**: Uses ChatGPT to rewrite image captions for data construction and performs two-stage fine-tuning. |
 | [RLHF-V](https://arxiv.org/pdf/2312.00849.pdf) | **CVPR'24** | 2023.12.1 | **RLHF**: Collects fine-grained, segment-level human correctional feedback for reward modeling and PPO optimization. |
-| [MOCHa](https://arxiv.org/pdf/2312.03631.pdf) | arXiv'23 | 2023.12.6 | **RLHF**: Trains a reward model based on Natural Language Inference (NLI) and uses RL to fine-tune the LVLM. |
+| [MOCHa](https://arxiv.org/pdf/2312.03631.pdf) | arXiv'23 | 2023.12.6 | **RLHF**: Trains a reward model based on Natural Language Inference (NLI) and uses RL to fine-tune the MLLM. |
 | [HACL](https://arxiv.org/pdf/2312.06968.pdf) | arXiv'23 | 2023.12.12 | **Contrastive Learning**: Introduces a hallucination-augmented contrastive learning loss function during the training phase. |
 | [SILKIE](https://arxiv.org/pdf/2312.10665.pdf) | arXiv'23 | 2023.12.17 | **Preference Distillation**: Uses AI to construct the VLFeedback dataset and distills preferences into the model via DPO. |
 | [KAM-CoT](https://arxiv.org/pdf/2401.12863.pdf) | arXiv'24 | 2024.1.23 | **Joint Training**: Jointly trains a language model, a vision encoder, and a Graph Neural Network (GNN) to integrate knowledge graphs for reasoning. |
@@ -228,7 +228,7 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 | [AGLA](https://arxiv.org/pdf/2406.12718) | **CVPR'25** | 2024.6.18 | **Attention Fusion**: Fuses global and local attention feature matrices internally to enhance fine-grained perception. |
 | [PAI](https://arxiv.org/pdf/2407.21771) | **ECCV'24** | 2024.7.31 | **Attention Amplification**: Adjusts cross-modal attention by forcefully amplifying the weights of visual tokens. |
 | [PROJECTAWAY](https://arxiv.org/pdf/2410.02762) | arXiv'24 | 2024.10.3 | **Representation Editing**: Identifies and edits vision-language feature vectors representing hallucinations in intermediate layers. |
-| [DAMRO](https://arxiv.org/pdf/2410.04514) | **EMNLP'24** | 2024.10.6 | **Attention Masking**: Dives into the LVLM to mask specific attention connections overly dominated by text. |
+| [DAMRO](https://arxiv.org/pdf/2410.04514) | **EMNLP'24** | 2024.10.6 | **Attention Masking**: Dives into the MLLM to mask specific attention connections overly dominated by text. |
 | [CAUSALMM](https://arxiv.org/pdf/2410.04780) | **ICLR'25** | 2024.10.7 | **Causal Attention Disconnection**: Uses causal analysis to block specific causal attention paths causing hallucinations during inference. |
 | [FROM PIXELS TO TOKENS](https://arxiv.org/pdf/2410.06795) | arXiv'24 | 2024.10.9 | **Early Layer Intervention**: Locates the evolution of object features and corrects visual tokens via early layer interventions. |
 | [CCA](https://arxiv.org/pdf/2410.15926) | **NIPS'24** | 2024.10.21 | **Concentric Causal Attention**: Strengthens the causal association between local visual features and global semantics in attention matrices. |
