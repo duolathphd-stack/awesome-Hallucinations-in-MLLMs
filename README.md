@@ -6,11 +6,11 @@
 - [Awesome MLLMs Hallucination](#awesome-Hallucinations-in-MLLMs)
      - [Survey](#Survey)
      - [Hallucination Mitigation](#Mitigation-Method)
-     -  - [Training & Alignment](#Training-&-Alignment)
+     -  - [Training & Alignment](#training--alignment)
             - [Decoding Strategies](#Decoding-Strategies)
             - [Attention & Architecture Intervention](#Attention-&-Architecture-Intervention)
             - [External Augmentation & Prompting](#External-Augmentation-&-Prompting)
-     - [Hallucination Benchmark](#Evaluation_Benchmark)
+     - [Hallucination Benchmark](#Evaluation-Benchmark)
 
 
 ## Survey
