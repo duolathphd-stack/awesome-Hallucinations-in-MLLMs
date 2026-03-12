@@ -39,11 +39,11 @@ The rapid growth of research on Multimodal Large Language Model (MLLM) hallucina
 | Year | Mitigation Methods | Evaluation Benchmarks | Surveys & Reviews | **Total Papers** |
 | :---: | :---: | :---: | :---: | :---: |
 | **2018** | 0 | 1 | 0 | **1** |
-| **2023** | 17 | 11 | 1 | **29** |
-| **2024** | 96 | 43 | 4 | **143** |
-| **2025** | 145 | 22 | 6 | **173** |
+| **2023** | 17 | 11 | 0 | **28** |
+| **2024** | 96 | 43 | 3 | **142** |
+| **2025** | 145 | 22 | 3 | **170** |
 | **2026** | 18 | 2 | 0 | **20** |
-| **Total**| **276** | **79** | **11** | **366** |
+| **Total**| **276** | **79** | **6** | **361** |
 
 > 💡 **Tip:** The year represents the initial arXiv publication date or the conference acceptance date. The statistics charts are auto-generated. You can reproduce or update them by running our python scripts using Matplotlib.
 
@@ -75,14 +75,11 @@ The hallucinations in Multimodal Large Language Models (MLLMs) are systemic issu
 ## 📚 Survey
 
 1. [A Survey on Hallucination in Large Vision-Language Models](https://arxiv.org/pdf/2402.00253.pdf) (2024.02.01)
-2. [Visual Hallucination: Definition, Quantification, and Prescriptive Remediations](https://arxiv.org/pdf/2403.17306.pdf) (2024.03.26)
-3. [Hallucination of Multimodal Large Language Models: A Survey](https://arxiv.org/pdf/2404.18930) (2024.04.29)
-4. [Unveiling Hallucination in Text, Image, Video, and Audio Foundation Models: A Comprehensive Survey](https://arxiv.org/pdf/2405.09589) (2024.05.20)
-5. [Benchmark Evaluations, Applications, and Challenges of Large Vision Language Models: A Survey](https://arxiv.org/pdf/2501.02189) (2025.01.04)
-6. [Exploring Hallucination of Large Multimodal Models in Video Understanding: Benchmark, Analysis and Mitigation](https://arxiv.org/pdf/2503.19622) (2025.03.25)
-7. [Why Contrastive Decoding Fails to Address Multimodal Hallucination](https://arxiv.org/pdf/2504.10020) (2025.04.18)
-8. [A Survey of Multimodal Hallucination Evaluation and Detection](https://arxiv.org/pdf/2507.19024) (2025.07.25)
-9. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (2025.09.26)
+2. [Hallucination of Multimodal Large Language Models: A Survey](https://arxiv.org/pdf/2404.18930) (2024.04.29)
+3. [Unveiling Hallucination in Text, Image, Video, and Audio Foundation Models: A Comprehensive Survey](https://arxiv.org/pdf/2405.09589) (2024.05.20)
+4. [Benchmark Evaluations, Applications, and Challenges of Large Vision Language Models: A Survey](https://arxiv.org/pdf/2501.02189) (2025.01.04)
+5. [A Survey of Multimodal Hallucination Evaluation and Detection](https://arxiv.org/pdf/2507.19024) (2025.07.25)
+6. [Review of Hallucination Understanding in Large Language and Vision Models](https://arxiv.org/pdf/2510.00034) (2025.09.26)
 
 ---
 
